@@ -494,7 +494,7 @@ body {
     color: #daae11;
 }
 .section3{
-    background-color:  #EEE6D8;
+    background-color:  #FADFA1;
 }
 .paragraph1{
   color: #FFAF61;
@@ -543,7 +543,7 @@ body {
     margin: 2px;
     padding: 12px;
     color: #2C2C2C;
-    background-color: #EEE6D8;
+    background-color: #FADFA1;
   }
   @media (max-width: 768px) {
     .logo {
