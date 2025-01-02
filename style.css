@@ -1434,9 +1434,8 @@ input[type="reset"]:hover {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-.text-highlight-section6{
-  margin: 0px;
-  padding: 5px;
+
+.section4{
   color: #000;
   background-color: #EEE6D8;
 }
