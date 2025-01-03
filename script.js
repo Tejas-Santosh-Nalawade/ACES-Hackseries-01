@@ -1,3 +1,11 @@
+// console.log("Script is running!");
+
+var loader = document.querySelector("#mainloader");
+
+setTimeout(() => {
+  loader.style.top = "-100%";
+}, 3650);
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -50,4 +58,4 @@ let url = "https://script.google.com/macros/s/AKfycbzWMuEajUXjNABzWHesGEzyqVntxk
     e.preventDefault();
   });
 
-
+  

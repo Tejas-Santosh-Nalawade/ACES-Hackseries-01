@@ -7,7 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 header {
 position: sticky;
 top: 0;
@@ -63,6 +62,59 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   font-size: 2rem; /* Adjust for better visibility */
 }
 
+#mainloader{
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  transition: all ease 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainloader h1{
+  font-size: 4vw;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to right, #FECC01 , #7D111C) ;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function:ease;
+}
+#mainloader h1:nth-child(2){
+  animation-delay: 2s;
+}
+#mainloader h1:nth-child(3){
+  animation-delay: 3s;
+}
+
+@keyframes load {
+  0%{
+      opacity: 0;
+  }
+  10%{
+      opacity: 1;
+  }
+  90%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
+@media (max-width:600px) {
+  #mainloader h1{
+      font-size: 9vw;
+    
+  }
+}
 .section2,
 .section3 {
   background-color: #e70505; /* Light background for sections */
