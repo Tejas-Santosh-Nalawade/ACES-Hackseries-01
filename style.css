@@ -62,6 +62,53 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   font-size: 2rem; /* Adjust for better visibility */
 }
 
+.countdown {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  gap: 30px;
+}
+.countdown-item {
+  text-align: center;
+}
+.countdown-item span {
+  display: block;
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(to right, #FECC01 , #fff) ;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  /* text-shadow: black 2px 2px 3px; */
+}
+.label {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .countdown-item span{
+    font-size: 36px;
+  }
+
+  .label {
+    font-size: 13px; /* Smaller font size for mobile devices */
+  }
+}
+
+.small-text {
+  font-size: 1.5rem; /* Default for larger screens */
+}
+
+@media (max-width: 600px) {
+  .small-text {
+    font-size: 1.175rem; /* Smaller font size for mobile devices */
+  }
+}
+
+/*Loader*/
 #mainloader{
   height: 100%;
   width: 100%;
@@ -82,7 +129,8 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   background: linear-gradient(to right, #FECC01 , #7D111C) ;
   -webkit-background-clip: text;
   position: absolute;
-  opacity: 0;animation-name: load;
+  opacity: 0;
+  animation-name: load;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-timing-function:ease;
