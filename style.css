@@ -66,7 +66,7 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   display: flex;
   justify-content: center;
   font-family: Arial, sans-serif;
-  align-items: center;
+  align-items: center; 
   gap: 30px;
 }
 .countdown-item {
@@ -82,13 +82,32 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   /* text-shadow: black 2px 2px 3px; */
 }
 .label {
+  padding:0;
   font-size: 18px;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 
-@media (max-width: 600px) {
+/* change in viewport height */
+.vh-custom {
+  height: 100vh; /* Default for larger screens */
+}
 
+@media (max-width: 768px) {
+  .vh-custom {
+    height: 90vh; /* Adjusted height for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .vh-custom {
+    height: 80vh; /* Smaller height for mobile devices */
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  
   .countdown-item span{
     font-size: 36px;
   }
