@@ -87,6 +87,16 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   margin-top: 10px;
 }
 
+.small-text {
+  font-size: 1.5rem; /* Default for larger screens */
+}
+
+@media (max-width: 600px) {
+  .small-text {
+    font-size: 1.275rem; /* Smaller font size for mobile devices */
+  }
+}
+
 /*Loader*/
 #mainloader{
   height: 100%;
