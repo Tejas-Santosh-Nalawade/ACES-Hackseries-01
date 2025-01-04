@@ -87,13 +87,24 @@ color: #ffa500; /* Optional: Hover effect with the same paragraph color */
   margin-top: 10px;
 }
 
+@media (max-width: 600px) {
+
+  .countdown-item span{
+    font-size: 36px;
+  }
+
+  .label {
+    font-size: 14px; /* Smaller font size for mobile devices */
+  }
+}
+
 .small-text {
   font-size: 1.5rem; /* Default for larger screens */
 }
 
 @media (max-width: 600px) {
   .small-text {
-    font-size: 1.275rem; /* Smaller font size for mobile devices */
+    font-size: 1.175rem; /* Smaller font size for mobile devices */
   }
 }
 
