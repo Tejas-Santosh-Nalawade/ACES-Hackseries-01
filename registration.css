@@ -1,0 +1,17 @@
+        /*google form styling*/
+        .google-form-container{
+            margin-top:20px;
+            text-align:center;
+
+        }
+        .google-form-container p{
+            color:rgb(135, 121, 121);
+        }
+        .google-form-link{
+            color:#b6a568;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        .google-form-link:hover{
+            text-decoration: underline;
+        }
