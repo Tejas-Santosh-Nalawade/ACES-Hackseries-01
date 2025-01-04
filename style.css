@@ -1588,3 +1588,9 @@ input[type="reset"]:hover {
 }
 
 
+  @media (max-width: 576px) {
+    .btn-lg {
+      padding: 0.5rem 0.75rem; /* Smaller padding for mobile */
+    }
+  }
+
