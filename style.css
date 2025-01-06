@@ -16,15 +16,6 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
 }
 
-header a {
-color: white; /* Ensure the text is readable */
-}
-
-header a:hover {
-color: #ffa500; /* Optional: Hover effect with the same paragraph color */
-}
-
-
 .navItems a {
   color: white; /* Ensure navbar links are readable */
   text-decoration: none;
@@ -204,13 +195,6 @@ header {
   transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
 }
 
-header a {
-  color: white; /* Ensure the text is readable */
-}
-
-header a:hover {
-  color: #ffa500; /* Optional: Hover effect with the same paragraph color */
-}
 /* General styles */
 :root {
     --bg-opacity: 1; /* Default opacity for background image */
@@ -609,11 +593,11 @@ body {
   background-color: #ff9900; /* Button color change on hover */
 }
 .section2{
-    background-color:  #2C2C2C;
+    background-color:  #EEE6D8;
     color: #daae11;
 }
 .section3{
-    background-color:  #FADFA1;
+    background-color:  #7D111C;
 }
 .paragraph1{
   color: #FFAF61;
@@ -1597,3 +1581,76 @@ input[type="reset"]:hover {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
   }
+
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.gradient-text {
+  color: #000000;
+  font-weight: bold;
+}
+
+.gradient-text-2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.feature-list li {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-list li:hover {
+    transform: translateY(-10px);
+}
+
+.feature-list i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #7D111C,#7D111C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-list p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
