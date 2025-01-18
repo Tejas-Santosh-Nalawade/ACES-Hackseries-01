@@ -1654,4 +1654,9 @@ input[type="reset"]:hover {
 [data-aos].aos-animate {
     pointer-events: auto;
 }
-
+.title-1{
+  font-family: 'DM Serif Display', serif;
+  color: transparent;
+  background: linear-gradient(to right, #FECC01 , #fff) ;
+  -webkit-background-clip: text;
+}
