@@ -1660,3 +1660,17 @@ input[type="reset"]:hover {
   background: linear-gradient(to right, #FECC01 , #fff) ;
   -webkit-background-clip: text;
 }
+
+.title-2{
+  font-family: 'DM Serif Display', serif;
+  color: transparent;
+  background: linear-gradient(to right) ;
+  -webkit-background-clip: text;
+  font-size: 2rem; 
+}
+.title-3{
+  font-family: 'DM Serif Display', serif;
+  color: transparent;
+  background: linear-gradient(to right, #FECC01 , #fff) ;
+  -webkit-background-clip: text;
+}
