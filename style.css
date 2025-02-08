@@ -787,9 +787,7 @@ body {
 }
 ::selection{
   color:#000000;
-  background: #B4FF39;
-}
-@keyframes fadeIn {
+  background: #7C111D;
     from {
         opacity: 0;
     }
@@ -1187,8 +1185,8 @@ padding: 50px 0;
   
 }
 ::selection{
-  color:#000000;
-  background: #B4FF39;
+  color:#ffffff;
+  background: #FF2400;
 }
 
 .ag-courses_box{
