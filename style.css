@@ -1420,10 +1420,8 @@ body {
 }
 
 .form-container {
-  /* background-color: bisque; */
   padding: 25px;
   border-radius: 25px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   max-width: 1400px;
   width: 100%;
 }
@@ -1673,4 +1671,90 @@ input[type="reset"]:hover {
   color: transparent;
   background: linear-gradient(to right, #FECC01 , #fff) ;
   -webkit-background-clip: text;
+}
+.carousel {
+  max-width: 800px; 
+  margin: 0 auto; /* Center align the carousel */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.carousel-inner .carousel-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner .carousel-item:nth-child(1) {
+  background-image: url('./images/01.JPG'); 
+}
+
+.carousel-inner .carousel-item:nth-child(2) {
+  background-image: url('./images/02.JPG');
+}
+
+.carousel-inner .carousel-item:nth-child(3) {
+  background-image: url('./images/03.JPG'); 
+}
+.carousel-inner .carousel-item:nth-child(4) {
+  background-image: url('./images/04.JPG'); 
+}
+.carousel-inner .carousel-item:nth-child(5) {
+  background-image: url('./images/05.JPG'); 
+}
+.carousel-inner .carousel-item:nth-child(6) {
+  background-image: url('./images/06.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(7) {
+  background-image: url('./images/07.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(8) {
+  background-image: url('./images/08.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(9) {
+  background-image: url('./images/09.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(10) {
+  background-image: url('./images/10.jpg');
+}
+.carousel-inner .carousel-item:nth-child(11) {
+  background-image: url('./images/11.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(12) {
+  background-image: url('./images/12.jpg'); 
+}
+.carousel-inner .carousel-item:nth-child(13) {
+  background-image: url('./images/13.jpg');
+}
+.carousel-inner .carousel-item:nth-child(14) {
+  background-image: url('./images/14.jpg');
+}
+.carousel-inner .carousel-item:nth-child(15) {
+  background-image: url('./images/15.jpg');
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%; 
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+
+.section5{
+  background-color: #7D111C;
 }

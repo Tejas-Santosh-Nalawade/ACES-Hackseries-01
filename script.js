@@ -84,4 +84,15 @@ let url = "https://script.google.com/macros/s/AKfycbzWMuEajUXjNABzWHesGEzyqVntxk
     e.preventDefault();
   });
 
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector('#animatedCarousel');
+    
+    // Add event listeners for animations
+    carousel.addEventListener('slide.bs.carousel', function () {
+      console.log('Slide animation started!');
+    });
+
+    carousel.addEventListener('slid.bs.carousel', function () {
+      console.log('Slide animation completed!');
+    });
+  });
