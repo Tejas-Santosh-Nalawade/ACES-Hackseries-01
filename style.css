@@ -1921,7 +1921,31 @@ input[type="reset"]:hover {
   transform: scale(1.2);
 }
 
-
+  /* --- RESPONSIVE STYLES --- */
+  
+  /* Tablet Devices */
+  @media screen and (max-width: 768px) {
+    .slider-img {
+      width: 240px;   /* Reduced width */
+      height: 170px;  /* Reduced height */
+    }
+    .slider-img span {
+      /* Adjust translateZ proportionally to maintain the 3D effect */
+      transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(600px);
+    }
+  }
+  
+  /* Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .slider-img {
+      width: 200px;   /* Further reduced width */
+      height: 140px;  /* Further reduced height */
+    }
+    .slider-img span {
+      /* Again adjust translateZ for the smaller size */
+      transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(500px);
+    }
+  }
 /* 
 .block{
 
