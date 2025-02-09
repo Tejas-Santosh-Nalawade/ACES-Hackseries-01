@@ -87,15 +87,78 @@ let url = "https://script.google.com/macros/s/AKfycbzWMuEajUXjNABzWHesGEzyqVntxk
     e.preventDefault();
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector('#animatedCarousel');
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   const container = document.querySelector('.container');
+  //   let isMouseDown = false;
+  //   let startX;
+  //   let scrollLeft;
+  //   let rafId = null;
+  
+  //   function startDragging(e) {
+  //     isMouseDown = true;
+  //     startX = e.pageX - container.offsetLeft;
+  //     scrollLeft = container.scrollLeft;
+  //     cancelAnimationFrame(rafId);
+  //   }
+  
+  //   function stopDragging() {
+  //     isMouseDown = false;
+  //   }
+  
+  //   function performDrag(e) {
+  //     if (!isMouseDown) return;
+  //     e.preventDefault();
+  //     const x = e.pageX - container.offsetLeft;
+  //     const walk = (x - startX) * 2;
+      
+  //     rafId = requestAnimationFrame(() => {
+  //       container.scrollLeft = scrollLeft - walk;
+  //     });
+  //   }
+  
+  //   // Desktop Events
+  //   container.addEventListener('mousedown', startDragging);
+  //   container.addEventListener('mouseleave', stopDragging);
+  //   container.addEventListener('mouseup', stopDragging);
+  //   container.addEventListener('mousemove', performDrag);
+  
+  //   // Touch Events
+  //   container.addEventListener('touchstart', (e) => {
+  //     startDragging(e.touches[0]);
+  //   });
     
-    // Add event listeners for animations
-    carousel.addEventListener('slide.bs.carousel', function () {
-      console.log('Slide animation started!');
-    });
-
-    carousel.addEventListener('slid.bs.carousel', function () {
-      console.log('Slide animation completed!');
-    });
-  });
+  //   container.addEventListener('touchend', stopDragging);
+    
+  //   container.addEventListener('touchmove', (e) => {
+  //     performDrag(e.touches[0]);
+  //   });
+  
+  //   // Smooth Scroll with Mouse Wheel
+  //   container.addEventListener('wheel', (e) => {
+  //     e.preventDefault();
+      
+  //     rafId = requestAnimationFrame(() => {
+  //       container.scrollLeft += e.deltaY;
+  //     });
+  //   }, { passive: false });
+  
+  //   // Intersection Observer for lazy loading images
+  //   const lazyLoadImages = () => {
+  //     const imageObserver = new IntersectionObserver((entries, observer) => {
+  //       entries.forEach(entry => {
+  //         if (entry.isIntersecting) {
+  //           const block = entry.target;
+  //           const className = block.className.split(' ')[1];
+  //           block.style.backgroundImage = `url(/images/${className.split('-')[1]}.jpg)`;
+  //           observer.unobserve(block);
+  //         }
+  //       });
+  //     });
+  
+  //     document.querySelectorAll('.block').forEach(block => {
+  //       imageObserver.observe(block);
+  //     });
+  //   };
+  
+  //   lazyLoadImages();
+  // });
