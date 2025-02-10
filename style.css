@@ -1879,13 +1879,12 @@ input[type="reset"]:hover {
   perspective: 1500px;  
 }
 
-
 .slider-img {
   position: relative;
   width: 290px;      
   height: 200px;    
   transform-style: preserve-3d;
-  animation: rotating 70s linear infinite;
+  animation: rotating 70s linear infinite reverse; /* Added reverse to make it move anticlockwise */
 }
 
 @keyframes rotating {
@@ -1921,31 +1920,31 @@ input[type="reset"]:hover {
   transform: scale(1.2);
 }
 
-  /* --- RESPONSIVE STYLES --- */
+/* --- RESPONSIVE STYLES --- */
   
-  /* Tablet Devices */
-  @media screen and (max-width: 768px) {
-    .slider-img {
-      width: 240px;   /* Reduced width */
-      height: 170px;  /* Reduced height */
-    }
-    .slider-img span {
-      /* Adjust translateZ proportionally to maintain the 3D effect */
-      transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(600px);
-    }
+/* Tablet Devices */
+@media screen and (max-width: 768px) {
+  .slider-img {
+    width: 240px;   /* Reduced width */
+    height: 170px;  /* Reduced height */
   }
+  .slider-img span {
+    /* Adjust translateZ proportionally to maintain the 3D effect */
+    transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(600px);
+  }
+}
   
-  /* Mobile Devices */
-  @media screen and (max-width: 480px) {
-    .slider-img {
-      width: 200px;   /* Further reduced width */
-      height: 140px;  /* Further reduced height */
-    }
-    .slider-img span {
-      /* Again adjust translateZ for the smaller size */
-      transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(500px);
-    }
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .slider-img {
+    width: 200px;   /* Further reduced width */
+    height: 140px;  /* Further reduced height */
   }
+  .slider-img span {
+    /* Again adjust translateZ for the smaller size */
+    transform: rotateY(calc((var(--i) - 1) * 24deg)) translateZ(500px);
+  }
+}
 /* 
 .block{
 
