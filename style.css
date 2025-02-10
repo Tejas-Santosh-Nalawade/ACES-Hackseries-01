@@ -1884,7 +1884,7 @@ input[type="reset"]:hover {
   width: 290px;      
   height: 200px;    
   transform-style: preserve-3d;
-  animation: rotating 70s linear infinite reverse; /* Added reverse to make it move anticlockwise */
+  animation: rotating 110s linear infinite reverse; /* Added reverse to make it move anticlockwise */
 }
 
 @keyframes rotating {
