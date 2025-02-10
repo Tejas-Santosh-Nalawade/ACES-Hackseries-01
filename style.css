@@ -1769,95 +1769,61 @@ input[type="reset"]:hover {
   background-color: #7D111C;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-.leaderboard {
-  text-align: center;
+.winner-group-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.leaderboard h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: transparent;
-  background: linear-gradient(to right, #FECC01 , #fff);
-  -webkit-background-clip: text;
-}
-
-@media (max-width: 768px) {
-  .leaderboard h1 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .leaderboard h1 {
-    font-size: 1.5rem; /* Further adjust font size for very small screens */
-  }
-}
-
-.leaderboard ul {
-  display: flex;
-  flex-direction: column;  /* Ensures a vertical leaderboard */
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.leaderboard li {
-  margin: 12px 0;
-  padding: 15px 25px;
-  border-radius: 10px;
-  display: inline-block;
+.category-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
   width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
-/* Rank Colors */
-.leaderboard li.first {
-  background: rgba(255, 217, 0, 0.762);
-  border: 2px solid #ffe600;
-  color: #ffff;
+.category-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
 }
 
-.leaderboard li.second {
-  background: rgba(192, 192, 192, 0.759);
-  border: 2px solid #c0c0c0ec;
-  color: #ffff;
+.text-highlight {
+  color: #FECC01;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
-.leaderboard li.third {
-  background: rgba(205, 128, 50, 0.734);
-  border: 2px solid #cd9432;
-  color: #fff;
+.winners-list {
+  margin-top: 1rem;
 }
-
-/* Hover Effect */
-.leaderboard li:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 7px 15px rgba(255, 255, 255, 0.355);
+.winner-group-img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 550px; /* Limits the maximum width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
-
-/* Simple Fade-in Animation */
-.leaderboard li.animate {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s ease-in-out forwards;
-}
-
-.leaderboard li.first { animation-delay: 0.2s; }
-.leaderboard li.second { animation-delay: 0.4s; }
-.leaderboard li.third { animation-delay: 0.6s; }
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
+@media (max-width: 768px) {
+  .category-card {
+    width: 100%;
+    padding: 1rem;
   }
-  to {
-      opacity: 1;
-      transform: translateY(0);
+
+  .winner-group-img {
+    max-width: 80%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .category-card {
+    padding: 0.5rem 1rem;
   }
 }
 
